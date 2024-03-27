@@ -1,0 +1,20 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 10px 20px; 
+}
+
+.nav {
+  display: flex;
+}
+
+.nav a {
+  text-decoration: none; /* Supprimer le soulignement */
+  margin-left: 20px; /* Ajouter un espace entre les liens*/
+}
+
+.nav__link--active {
+  text-decoration: none; /* Supprimer le soulignement par défaut */
+  border-bottom: 2px solid black; /* Ajouter un trait noir en dessous du lien */
+}

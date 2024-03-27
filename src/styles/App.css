@@ -1,0 +1,24 @@
+h1 {
+  color: red;
+}
+
+#footer {
+  background-color: black;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  height: 209px;
+  margin-top: 20px;
+}
+
+.logo {
+  width: 122px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+/*# sourceMappingURL=App.css.map */
