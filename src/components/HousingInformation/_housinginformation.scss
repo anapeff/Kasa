@@ -1,0 +1,189 @@
+#TitreAppart {
+    color: #FF6060;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 0; 
+  }
+
+.tag{
+    display: inline-block; 
+
+  border-radius: 50px;
+  background-color: #FF6060;
+  color: white;
+  width: 140px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 10px;
+  text-align: center; 
+ 
+
+}
+ul {
+
+    padding: 0; 
+  }
+
+.InfosContainer{
+    margin-right:auto;
+    margin-left:auto;
+    max-width: 1220px;
+    justify-content: space-between;
+    margin-top: 10px;
+    
+
+ 
+}
+
+.picture{
+  border-radius: 50px;
+  object-fit: cover;
+  width: 80px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+
+}
+
+.location{
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.name{
+  color:#FF6060;
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 5px;
+  text-align: right;
+  width:93px;
+}
+
+.equipements{
+display:flex;
+flex-direction: column;
+}
+
+.equipement{
+  font-size:18px;
+  margin-bottom: 5px;
+}
+
+.collapses{
+  display:flex;
+  margin-top: 20px;
+  gap:80px;
+}
+
+.collapseleft{
+  width:100%;
+}
+
+.collapseright{
+  width:100%;
+}
+
+.DataContainer{
+    display:flex;
+    flex-direction: row;
+
+}
+
+.NameContainer{
+  margin-left: auto;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.names{
+  display:flex;
+  flex-direction: row;
+  margin-right: auto;
+  align-items: center;
+}
+
+
+.left {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  
+    
+    
+  }
+
+  @media (max-width: 768px)
+  {
+  
+    #TitreAppart{
+  font-size: 18px;
+    }
+  
+    .location{
+      font-size: 14px;
+      margin-top: 10px;
+    }
+  
+  .InfosContainer{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .DataContainer{
+    flex-direction: column;
+  }
+  
+  .NameContainer{
+    flex-direction: row-reverse;
+    margin-left: 0;
+    width:100%;
+    align-items:center;
+  }
+  
+  .names{
+    float: right;
+    margin-left: auto;
+    margin-right:0;
+  }
+  
+  .collapses{
+    flex-direction: column;
+    gap:0;
+  }
+  
+  .collapseleft{
+    width:100%
+  }
+  
+  .collapseright{
+    width:100%
+  }
+  
+  .name{
+    font-size: 12px;
+    width:60px
+  }
+  
+  .tag{
+    margin-top: 10px;
+    font-size: 10px;
+    width: 100px;
+    height: 18px;
+  }
+  
+  .picture{
+    width:32px;
+    height:32px;
+  }
+  
+  .NameContainer{
+    margin-top: 10px;
+  }
+  
+  .equipement{
+    font-size: 10px;
+  }
+  
+  }

@@ -4,6 +4,9 @@
   align-items: center;
   color: #FF6060;
   padding: 50px 100px;
+  margin-right:auto;
+  margin-left:auto;
+  max-width: 1220px;
 
   @media (max-width: 767px) {
       padding: 20px;  
@@ -23,6 +26,7 @@
   &_link{
       display: flex;
       gap: 50px;
+  
       @media (max-width: 767px) {
           gap: 25px;              
       }
@@ -32,6 +36,7 @@
           border-bottom: none; 
           text-transform: uppercase;
           position: relative;
+          text-decoration: none;
           
 
           @media (max-width: 767px) {
@@ -43,7 +48,7 @@
           }
 
           &.active{
-              border-bottom: 2px solid black;
+            border-bottom: 2px solid black;
           }
       
       }

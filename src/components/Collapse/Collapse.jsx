@@ -4,7 +4,7 @@ import arrowUp from '../../images/Arrow-up.png';
 import arrowDown from '../../images/Arrow-down.png';
 
 
-function Collapse({ title, children }) {
+function Collapse({ title, content }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleCollapse = () => {
@@ -12,16 +12,14 @@ function Collapse({ title, children }) {
   };
 
   return (
-   
     <div className="collapse">
-        
       <div className="collapse-header" onClick={toggleCollapse}>
         <span>{title}</span>
         <img src={isOpen ? arrowUp : arrowDown} alt={isOpen ? 'up' : 'down'} />
       </div>
       {isOpen && (
         <div className="collapse-content">
-          {children}
+          {content}
         </div>
       )}
     </div>

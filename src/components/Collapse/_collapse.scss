@@ -1,11 +1,15 @@
 .collapse {
     border: none;
     margin-bottom: 20px;
-    margin: 0px 100px 45px 100px;
+    margin-right:auto;
+    margin-left:auto;
+    max-width: 1220px;
   
     .collapse-header {
       background-color: #FF6060;
-      color: purple;
+     font-weight: bold;
+     color: white;
+     font-size: 23px;
       border-radius: 5px;
       padding: 10px;
       display: flex;

@@ -10,6 +10,7 @@ function Header() {
     <nav className='header_link'>            
         <NavLink exact="true" to="/" activeclassname="active">Accueil</NavLink> 
         <NavLink to="/about" activeclassname="active">A propos</NavLink> 
+        
       </nav>
 </div>
   );
