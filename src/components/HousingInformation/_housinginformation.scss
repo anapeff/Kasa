@@ -26,7 +26,7 @@ ul {
     padding: 0; 
   }
 
-.InfosContainer{
+.Container{
     margin-right:auto;
     margin-left:auto;
     max-width: 1220px;
@@ -91,7 +91,7 @@ flex-direction: column;
 
 }
 
-.NameContainer{
+.HostContainer{
   margin-left: auto;
   display:flex;
   flex-direction: column;
@@ -126,7 +126,7 @@ flex-direction: column;
       margin-top: 10px;
     }
   
-  .InfosContainer{
+  .Container{
     margin-left: 10px;
     margin-right: 10px;
   }
@@ -135,7 +135,7 @@ flex-direction: column;
     flex-direction: column;
   }
   
-  .NameContainer{
+  .HostContainer{
     flex-direction: row-reverse;
     margin-left: 0;
     width:100%;

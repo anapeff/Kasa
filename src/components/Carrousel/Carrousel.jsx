@@ -6,23 +6,25 @@ import arrowRight from '../../images/Arrow-right.png';
 
 const Carrousel = ({ logementId }) => {
   const pageData = logements.find((item) => item.id === logementId);
-  const [currentIndex, setIndex] = useState(0);
 
+  // Initialiser l'index de l'image 
+  const [Index, setIndex] = useState(0);
+  // Passe à l'image suivante 
   const next = () => {
-    setIndex((prevIndex) => (prevIndex + 1) % pageData.pictures.length);
+    setIndex((Index) => (Index + 1) % pageData.pictures.length);
   };
-
+  // Revenir à l'image précédente 
   const prev = () => {
-    setIndex((prevIndex) => (prevIndex - 1 + pageData.pictures.length) % pageData.pictures.length);
+    setIndex((Index) => (Index - 1 + pageData.pictures.length) % pageData.pictures.length);
   };
 
   return (
     <div className="carousel-container">
-      <img src={pageData.pictures[currentIndex]} alt="Appartement" className="carousel-image" />
+      <img src={pageData.pictures[Index]} alt="Appartement" className="carousel-image" />
       <img className="carousel-button prev" alt="prev" src={arrowLeft} onClick={prev} />
       <img className="carousel-button next" alt="next" src={arrowRight} onClick={next} />
       <div className='counterContainer'>
-        <div>{currentIndex + 1}/{pageData.pictures.length}</div>
+        <div>{Index + 1}/{pageData.pictures.length}</div>
       </div>
     </div>
   );

@@ -8,7 +8,7 @@ function Error() {
   return (
     
     <div>
-        <Header/>
+     
 
       <section className='error'>
 
@@ -17,7 +17,7 @@ function Error() {
         <Link className='error_link_redirection' to="/">Retourner sur la page d’accueil</Link>
         
         </section>
-      <Footer />
+
     </div>
   );
 }
