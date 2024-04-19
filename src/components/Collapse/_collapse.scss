@@ -1,24 +1,31 @@
 .collapse {
-    border: none;
-    margin-bottom: 20px;
-    margin-right:auto;
-    margin-left:auto;
-    max-width: 1220px;
-  
-    .collapse-header {
-      background-color: #FF6060;
-     font-weight: bold;
-     color: white;
-     font-size: 23px;
-      border-radius: 5px;
-      padding: 10px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      cursor: pointer;
-    }
-  
-    .collapse-content {
-      padding: 10px;
+  border: none;
+  margin-bottom: 20px;
+  margin-right:auto;
+  margin-left:auto;
+  max-width: 1020px;
+
+  .collapse-header {
+    background-color: #FF6060;
+   font-weight: bold;
+   color: white;
+   font-size: 23px;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    @media (max-width: 768px) {
+      font-size: 14px;
     }
   }
+
+  .collapse-content {
+    padding: 20px;
+    background-color: #f6f6f6;
+
+  }
+
+}
+

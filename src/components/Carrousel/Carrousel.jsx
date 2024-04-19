@@ -21,14 +21,19 @@ const Carrousel = ({ logementId }) => {
   return (
     <div className="carousel-container">
       <img src={pageData.pictures[Index]} alt="Appartement" className="carousel-image" />
-      <img className="carousel-button prev" alt="prev" src={arrowLeft} onClick={prev} />
-      <img className="carousel-button next" alt="next" src={arrowRight} onClick={next} />
-      <div className='counterContainer'>
-        <div>{Index + 1}/{pageData.pictures.length}</div>
-      </div>
+      {(pageData.pictures.length > 1) &&
+        <>
+          <img className="carousel-button prev" alt="prev" src={arrowLeft} onClick={prev} />
+          <img className="carousel-button next" alt="next" src={arrowRight} onClick={next} />
+          <div className='counterContainer'>
+            <div>{Index + 1}/{pageData.pictures.length}</div>
+          </div>
+        </>
+      }
     </div>
   );
 };
 
 export default Carrousel;
+
 

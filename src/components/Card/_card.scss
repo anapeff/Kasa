@@ -30,14 +30,13 @@ max-width: 1220px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
-    margin-right:auto;
-    margin-left:auto;
+    margin: 0 auto; 
     max-width: 1220px;
-  
     background: #F6F6F6;
     border-radius: 15px;
-    margin-top: 45px;
+    margin-top: 40px;
     padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 .title_card{
@@ -68,9 +67,13 @@ max-width: 1220px;
 }
 
 
-@media (max-width: 768px)
-{
-.cardsPosition{
-    justify-content: center;
-}
-}
+@media all and (max-width: 768px){
+
+    .cardsPosition {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        margin-top: 0;
+      }
+
+    }

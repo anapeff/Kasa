@@ -8,7 +8,7 @@
   margin-left:auto;
   max-width: 1220px;
 
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
       padding: 20px;  
   }
 
@@ -16,7 +16,7 @@
       margin-right: auto;
       width: 210px;
       height: 68px;
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
           width: 145px;
           height: 47px;
           
@@ -27,20 +27,21 @@
       display: flex;
       gap: 50px;
   
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
           gap: 25px;              
       }
       a{
           font-size: 24px ;
           color: black;
           border-bottom: none; 
-          text-transform: uppercase;
+          
           position: relative;
           text-decoration: none;
           
 
           @media (max-width: 767px) {
-              font-size: 12px;               
+              font-size: 12px;   
+              text-transform: uppercase;            
           }
           &:hover {
      

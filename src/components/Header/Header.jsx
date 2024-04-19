@@ -5,6 +5,7 @@ import LogoKasa from '../../images/kasa.svg';
 
 function Header() {
   return (
+    <>
     <div className='header'>
     <img className='header_logo' src={LogoKasa}/>
     <nav className='header_link'>            
@@ -13,6 +14,7 @@ function Header() {
         
       </nav>
 </div>
+</>
   );
 }
 
