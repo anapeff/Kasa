@@ -13,7 +13,7 @@ function Home() {
                 text="Chez vous, partout et ailleurs"
             />
 
-<div className="backCardsHome">
+
             
 <section className="cardsPosition">
   {logements.map((logement) => {
@@ -24,9 +24,6 @@ function Home() {
     )
   })}
 </section>
-        </div>
-
-
 
     </>
   );
