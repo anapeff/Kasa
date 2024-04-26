@@ -7,24 +7,19 @@ import logements from "../../data/logements.json";
 function Home() {
   return (
     <>
-      
       <Banner
-                image={imgBannerHome}
-                text="Chez vous, partout et ailleurs"
-            />
-
-
-            
-<section className="cardsPosition">
-  {logements.map((logement) => {
-    return (
-      <Link key={logement.id} className="paddingCard" to={`/housing/${logement.id}`}>
-        <Card cover={logement.cover} title={logement.title} />
-      </Link>
-    )
-  })}
-</section>
-
+          image={imgBannerHome}
+          text="Chez vous, partout et ailleurs"
+      />
+      <section className="cardsPosition">
+        {logements.map((logement) => {
+        return (
+          <Link key={logement.id} className="paddingCard" to={`/housing/${logement.id}`}>
+            <Card cover={logement.cover} title={logement.title} />
+          </Link>
+          )
+        })}
+      </section>
     </>
   );
 }

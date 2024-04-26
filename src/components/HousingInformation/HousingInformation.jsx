@@ -8,9 +8,9 @@ import './_housinginformation.scss';
 const HousingInformation = () => { 
   //  obtenir l'ID du logement 
   const { id } = useParams(); 
-// Recherche le logement correspondant à l'ID 
+  // Recherche le logement correspondant à l'ID 
   const pageData = logements.find((item) => item.id === id); 
-// Liste d'équipements 
+  // Liste d'équipements 
   const equip = ( 
     <ul className='equipements'> 
       {pageData.equipments.map((equip) => (

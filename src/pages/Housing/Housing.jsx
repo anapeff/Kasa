@@ -11,14 +11,11 @@ const Housing = () => {
   const pageData = logements.find((item) => item.id === id);
 
   if (!pageData){ return <ErrorPage/> }
-
+  
   return (
     <div>
-    
-      <Carrousel logementId={id} />
-      <HousingInformation logementId={id} />
-     
-    
+      <Carrousel id={id} />
+      <HousingInformation id={id} />
     </div>
   );
 };

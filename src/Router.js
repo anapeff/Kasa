@@ -4,7 +4,6 @@ import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import ErrorPage from './pages/Error/Error404';
 import Housing from './pages/Housing/Housing';
-
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer'
 

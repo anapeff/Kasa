@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
+import { useParams } from 'react-router-dom';
 import './_carrousel.scss';
 import logements from '../../data/logements.json';
 import arrowLeft from '../../images/Arrow-left.png';
 import arrowRight from '../../images/Arrow-right.png';
 
-const Carrousel = ({ logementId }) => {
-  const pageData = logements.find((item) => item.id === logementId);
+const Carrousel = () => {
+  const { id } = useParams();
+  const pageData = logements.find((item) => item.id === id);
 
   // Initialiser l'index de l'image 
   const [Index, setIndex] = useState(0);
